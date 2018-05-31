@@ -1,5 +1,5 @@
 {
-    "name": "projectlinks",
+    "name": "project-links",
     "displayName": "projectLinks",
     "description": "A dead-simple extension to make project:// links work how you would expect",
     "version": "1.0.0",
