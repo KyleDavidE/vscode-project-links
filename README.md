@@ -1,6 +1,5 @@
 # [Project Links](https://marketplace.visualstudio.com/items?itemName=KyleDavidE.vscode-project-links)
 
-
 ## Features
 
 makes links of the form `project://path/to/file` link to a file within your
