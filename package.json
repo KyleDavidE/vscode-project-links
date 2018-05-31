@@ -1,6 +1,6 @@
 {
-    "name": "project-links",
-    "displayName": "projectLinks",
+    "name": "vscode-project-links",
+    "displayName": "Project Links",
     "description": "A dead-simple extension to make project:// links work how you would expect",
     "version": "1.0.0",
     "publisher": "KyleDavidE",
