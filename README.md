@@ -1,4 +1,5 @@
-# projectlinks
+# [Project Links](https://marketplace.visualstudio.com/items?itemName=KyleDavidE.vscode-project-links)
+
 
 ## Features
 
