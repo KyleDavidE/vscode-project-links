@@ -61,15 +61,23 @@ class LinkProvider implements DocumentLinkProvider {
       match;
       match = regexGlobal.exec(str)
     ) {
-      links.push({
-        range: new Range(
-          document.positionAt(match.index),
-          document.positionAt(match.index + match[0].length)
-        ),
-        target: workspaceFolder.uri.with({
-          path: workspaceFolder.uri.path + "/" + match[1]
-        })
-      });
+      try{
+        const url = Uri.parse( match[0].replace(/\/\//,"///"));      
+        links.push({
+          range: new Range(
+            document.positionAt(match.index),
+            document.positionAt(match.index + match[0].length)
+          ),
+          target: workspaceFolder.uri.with({
+            path: workspaceFolder.uri.path + url.path,
+            query: url.query,
+            fragment: url.fragment
+          })
+        });
+
+      }catch(e){
+        //link is somehow invalid
+      }
     }
     return links;
   }

@@ -2,7 +2,7 @@
     "name": "vscode-project-links",
     "displayName": "Project Links",
     "description": "A dead-simple extension to make project:// links work how you would expect",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "publisher": "KyleDavidE",
     "engines": {
         "vscode": "^1.23.0"
@@ -14,9 +14,7 @@
         "*"
     ],
     "main": "./out/extension",
-    "contributes": {
-        
-    },
+    "contributes": {},
     "scripts": {
         "vscode:prepublish": "npm run compile",
         "compile": "tsc -p ./",
@@ -28,11 +26,9 @@
         "@types/mocha": "^2.2.42",
         "@types/node": "^7.0.43",
         "typescript": "^2.6.1",
-        "vscode": "^1.1.6"    
+        "vscode": "^1.1.6"
     },
-    "dependencies": {
-    
-    },
+    "dependencies": {},
     "repository": {
         "type": "git",
         "url": "https://github.com/KyleDavidE/vscode-project-links.git"
